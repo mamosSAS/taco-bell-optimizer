@@ -101,7 +101,7 @@ export default function Home() {
   }
 
   const categories = menu
-    ? [...new Set(menu.singles.map((s) => s.category))]
+    ? menu.categories.filter((c) => menu.singles.some((s) => s.categories.includes(c)))
     : [];
   const cartCount = Object.values(demand).reduce((a, b) => a + b, 0);
 
@@ -160,7 +160,7 @@ export default function Home() {
               <summary>{cat}</summary>
               <ul className="items">
                 {menu.singles
-                  .filter((s) => s.category === cat)
+                  .filter((s) => s.categories.includes(cat))
                   .map((s) => (
                     <li key={s.code}>
                       <span className="item-name">
