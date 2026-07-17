@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>taco-bell-optimizer</Name>
-  <!-- Replace with wherever you push the image (Docker Hub or GHCR), e.g. yourdockerhubuser/taco-bell-optimizer:latest -->
-  <Repository>YOUR_REGISTRY/taco-bell-optimizer:latest</Repository>
-  <Registry/>
+  <Repository>ghcr.io/mamossas/taco-bell-optimizer:latest</Repository>
+  <Registry>https://ghcr.io</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project>https://github.com/ben9583/taco-bell-prices</Project>
+  <Support>https://github.com/mamosSAS/taco-bell-optimizer/issues</Support>
+  <Project>https://github.com/mamosSAS/taco-bell-optimizer</Project>
   <Overview>Taco Bell Order Optimizer - pick the food you want and find the cheapest combination of boxes, combos, and swaps to get it at nearby Taco Bells. Stateless; prices are fetched live from tacobell.com and cached in memory. No volumes or environment variables required.</Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/mamosSAS/taco-bell-optimizer/main/taco-bell-optimizer.xml</TemplateURL>
   <Icon>https://www.tacobell.com/favicon.ico</Icon>
   <ExtraParams/>
   <PostArgs/>

@@ -31,14 +31,15 @@ when building on Apple Silicon for an x86 server.
 
 ### Unraid
 
-1. Push the image somewhere your Unraid box can pull it:
-   ```sh
-   docker tag taco-bell-optimizer yourdockerhubuser/taco-bell-optimizer:latest
-   docker push yourdockerhubuser/taco-bell-optimizer:latest
-   ```
+A GitHub Actions workflow builds a multi-arch (amd64/arm64) image to
+`ghcr.io/mamossas/taco-bell-optimizer:latest` on every push to `main`, and
+the template already points at it — no manual registry work.
+
+1. One-time: make the GHCR package public (GitHub → your profile → Packages →
+   taco-bell-optimizer → Package settings → Change visibility), otherwise
+   Unraid can't pull anonymously.
 2. Copy [taco-bell-optimizer.xml](taco-bell-optimizer.xml) to
-   `/boot/config/plugins/dockerMan/templates-user/` on the Unraid server and
-   edit the `<Repository>` line to match the image you pushed.
+   `/boot/config/plugins/dockerMan/templates-user/` on the Unraid server.
 3. In the Unraid web UI: Docker → Add Container → pick
    **taco-bell-optimizer** from the template dropdown, choose a host port,
    apply. The WebUI link appears on the container.
