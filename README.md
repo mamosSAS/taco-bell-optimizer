@@ -35,12 +35,9 @@ A GitHub Actions workflow builds a multi-arch (amd64/arm64) image to
 `ghcr.io/mamossas/taco-bell-optimizer:latest` on every push to `main`, and
 the template already points at it — no manual registry work.
 
-1. One-time: make the GHCR package public (GitHub → your profile → Packages →
-   taco-bell-optimizer → Package settings → Change visibility), otherwise
-   Unraid can't pull anonymously.
-2. Copy [taco-bell-optimizer.xml](taco-bell-optimizer.xml) to
+1. Copy [taco-bell-optimizer.xml](taco-bell-optimizer.xml) to
    `/boot/config/plugins/dockerMan/templates-user/` on the Unraid server.
-3. In the Unraid web UI: Docker → Add Container → pick
+2. In the Unraid web UI: Docker → Add Container → pick
    **taco-bell-optimizer** from the template dropdown, choose a host port,
    apply. The WebUI link appears on the container.
 
