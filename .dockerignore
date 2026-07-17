@@ -1,0 +1,8 @@
+node_modules
+.next
+.next-build
+.git
+.claude
+README.md
+taco-bell-optimizer.xml
+docker-compose.yml

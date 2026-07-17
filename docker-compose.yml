@@ -1,0 +1,8 @@
+services:
+  taco-bell-optimizer:
+    build: .
+    image: taco-bell-optimizer:latest
+    container_name: taco-bell-optimizer
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

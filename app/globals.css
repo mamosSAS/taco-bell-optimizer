@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f6f3f8;
+  color: #222;
+}
+main { max-width: 720px; margin: 0 auto; padding: 1rem 1rem 4rem; }
+header h1 { color: #702082; margin-bottom: 0.2rem; }
+header p { margin-top: 0; color: #555; }
+h2 { margin: 1.5rem 0 0.5rem; font-size: 1.1rem; }
+h2 small { font-weight: normal; color: #777; }
+section { background: #fff; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.row { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+button {
+  background: #702082; color: #fff; border: none; border-radius: 8px;
+  padding: 0.5rem 0.9rem; font-size: 1rem; cursor: pointer;
+}
+button:disabled { opacity: 0.5; cursor: default; }
+button.primary { width: 100%; padding: 0.8rem; font-size: 1.1rem; }
+input { padding: 0.5rem; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; width: 8rem; }
+ul { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.stores li { padding: 0.35rem 0; border-bottom: 1px solid #eee; }
+.stores label { display: flex; gap: 0.5rem; align-items: baseline; cursor: pointer; }
+.open { color: #1a7f37; } .closed { color: #b35900; }
+details { border-top: 1px solid #eee; padding: 0.4rem 0; }
+summary { cursor: pointer; font-weight: 600; }
+.items li { display: flex; justify-content: space-between; align-items: center; padding: 0.3rem 0; }
+.item-name small { color: #777; }
+.stepper { display: flex; align-items: center; gap: 0.6rem; }
+.stepper button { padding: 0.1rem 0.6rem; font-size: 1.1rem; }
+.stepper b { min-width: 1.2rem; text-align: center; }
+.cart p { color: #555; }
+.status { color: #b35900; }
+.result { border: 1px solid #ddd; border-radius: 10px; padding: 0.8rem; margin-top: 0.6rem; }
+.result.best { border: 2px solid #1a7f37; background: #f4fbf6; }
+.result-head { display: flex; align-items: baseline; gap: 0.4rem; }
+.total { margin-left: auto; font-size: 1.3rem; font-weight: 700; color: #702082; }
+.savings { color: #1a7f37; font-weight: 600; margin: 0.4rem 0; }
+.picks li { padding: 0.3rem 0; border-top: 1px dashed #eee; }
+.swap { color: #555; font-size: 0.92rem; margin-left: 1rem; }
+footer { color: #999; font-size: 0.85rem; text-align: center; margin-top: 2rem; }

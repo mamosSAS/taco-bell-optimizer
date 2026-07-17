@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>taco-bell-optimizer</Name>
+  <!-- Replace with wherever you push the image (Docker Hub or GHCR), e.g. yourdockerhubuser/taco-bell-optimizer:latest -->
+  <Repository>YOUR_REGISTRY/taco-bell-optimizer:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/ben9583/taco-bell-prices</Project>
+  <Overview>Taco Bell Order Optimizer - pick the food you want and find the cheapest combination of boxes, combos, and swaps to get it at nearby Taco Bells. Stateless; prices are fetched live from tacobell.com and cached in memory. No volumes or environment variables required.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.tacobell.com/favicon.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="Host port for the web interface" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+</Container>
